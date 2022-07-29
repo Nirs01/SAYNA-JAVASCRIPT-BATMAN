@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    
+    
+    
+    
+
+    <!-- offline bootstrap, will delete -->
+    <link rel="stylesheet" href="bootstrap-5.1.3-dist/css/bootstrap.min.css">
+    
+    <link rel="stylesheet" href="Assets/scss/index.css">
+    <title>Batman</title>
+</head>
+<body>
+    <header class="container-fluid">
+        <nav class="container" id="nav-bar">
+            <img src="Assets/Logos/logohome.png" alt="logohome.png">
+ 
+            <ul>
+                <li class="active" id="home"><a href="index.html">HOME</a></li>
+                <li id="game"><a href="game.html">GAME</a></li>
+            </ul>
+        </nav>
+        <div class="container text-center bio">
+            <p>
+                Au nom de ses parents assassinés, Bruce Wayne mène
+                une guerre éternelle contre les criminels de Gotham City.
+                Il est vengeur. Il est la nuit. <br><br>
+                <span id="heIs">Il est Batman.</span>
+            </p>
+           <a href="#bat"> <button type="button" class="btn btn-hero">voir le héros </button></a>
+           <a href="#nemesis"> <button type="button" class="btn btn-foes">les adversaires</button></a>
+        </div>
+        <div class="social">
+           <a href="#nav-bar"> <img class="batarang" src="Assets/Logos/logo_bat_flèche.png" alt=""></a>
+            <!-- svg facebook -->
+            <svg class="my-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg>
+            <!-- svg instagram -->
+            <svg class="my-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+            <!-- svg twitter -->
+            <svg class="my-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+
+            <a href="#form1"><img class="batarang" src="Assets/Logos/logo_bat_flèche_2.png" alt=""></a>
+
+        </div>
+    </header>
+
+    <div class="down">
+        <img src="Assets/Logos/flèche_down_header.png" alt="down">
+    </div>
+    <section class="container cinema" id="bat">
+        <h1>
+            BATMAN AU CINÉMA
+        </h1>
+        <p class="para">
+            Le personnage de Batman est un super héros de l’univers de DC Comics. Il a été créé par le
+dessinateur Bob Kane et le scénariste Bill Finger et apparaît pour la première fois dans le
+comic book Detective Comics en 1939. Batman se différencie de Superman, alors héros
+majeur de DC, car il n’a aucun pouvoir. Il sera porté au cinema pour la première fois en 1943
+par Lewis Wilson et bénéficiera de nombreux reboot, donnant l’occasion à de multiples
+acteurs d’interpréter l’homme chauve souris. Voici les trois derniers :
+        </p>
+        <div class="reveal">
+            <div class="bat-and-foes ">
+                <div class="card-image">
+                    <img src="Assets/Illustrations/Home/Bathome2.png" alt="Robert Pattinson">
+                    <div class="actor">
+                        
+                        <img src="Assets/Illustrations/Home/Robert_Pattinson.png" alt="Robert Pattinson">
+                        <span class="details"> Robert Pattinson  &nbsp; <span> 2022</span> </span>
+                    </div>
+                </div>
+                <div class="card-image">
+                    <img src="Assets/Illustrations/Home/Bathome3.png" alt="Christian Bale">
+                    <div class="actor">
+                        
+                        <img src="Assets/Illustrations/Home/Christian_Bale.png" alt="Christian Bale">
+                        <span class="details"> Christian Bale  &nbsp; <span> 2006-2008-2012</span></span>
+                    </div>
+                    
+                </div>
+                <div class="card-image">
+                    <img src="Assets/Illustrations/Home/Bathome4.png" alt="Ben Affleck">
+                    <div class="actor">
+                        
+                        <img src="Assets/Illustrations/Home/Ben_Affleck.png" alt="Ben Affleck">
+                        <span class="details"> Ben Affleck  &nbsp; <span> 2016-2017/2022-2023</span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+
+    </section>
+    <section class="slide-show container-fluid reveal">
+        <img src="" name="slider" alt="">
+
+        
+    </section>
+    <div>
+        <section class="container nemesis" id="nemesis">
+            <h1>
+                némésis
+            </h1>
+            <p class="para">
+                Batman souhaite éradiquer la criminalité de Gotham. C’est pourquoi, il affrontera la plupart
+    du temps, des vilains sans capacités surnaturelles mais particulièrement violents ou
+    psychopathes. Avec son introduction dans la Justice League il aura l’occasion de se
+    mesurer à des antagonistes qui défient l’imagination et les lois de la physique. Parmis les
+    derniers ennemis emblématiques que nous avons pu voir au cinéma, on retrouve :
+            </p>
+            <div class="bat-and-foes reveal">
+                <div class="card-image">
+                    <img src="Assets/Illustrations/Home/Bathome5.png" alt="The Riddler">
+                    <div class="actor">
+                        
+                        <img src="Assets/Illustrations/Home/Paul_Dano.png" alt="Paul Dano">
+                        <span class="details"> The Riddler/Edward Nashton  &nbsp; <span> Paul Dano - 2022</span></span>
+                    </div>
+                </div>
+                <div class="card-image">
+                    <img src="Assets/Illustrations/Home/Bathome6.png" alt="Joker">
+                    <div class="actor">
+                        
+                        <img src="Assets/Illustrations/Home/Heath_Ledger.png" alt="Heath Ledger">
+                        <span class="details"> The Joker  &nbsp; <span> Heath Ledger - 2008</span></span>
+                    </div>
+                </div>
+                <div class="card-image">
+                    <img src="Assets/Illustrations/Home/Bathome7.png" alt="Darkseid">
+                    <div class="actor">
+                        
+                        <img src="Assets/Illustrations/Home/Ray_Porter.png" alt="Ray Porter">
+                        <span class="details"> Darkseid  &nbsp; <span> Ray Porter - 2020</span></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <section class="container multimedia">
+        <h1>
+            multimédia
+        </h1>
+        <div class="review">
+            <img class="arrow prev" src="Assets/Logos/Icones en + dans Home/icon_flèche_1.png" alt="précedent">
+
+            <figure class="movie-description" id="begins">
+
+                <!-- batman begins -->
+
+                <img src="Assets/Illustrations/Home/Bathome8.png"  alt="">
+                <figcaption>
+                    <h2>
+                        ACTION, ADVENTURE
+                    </h2>
+                    <h3>
+                        Batman Begins
+                    </h3>
+                    <p>
+                        IMDB: <span>8.2</span>
+                    </p>
+                    <p>
+                        Le jeune Bruce Wayne assiste impuissant au meurtre de ses
+parents. Profondément traumatisé, il grandit obnubilé par un
+désir de vengeance. La Ligue des ombres, une secte de
+guerriers ninja dirigée par Ra's al Ghul, se chargera de son
+entraînement. De retour chez lui à Gotham, avec l'aide de son
+majordome Alfred Pennyworth, Bruce Wayne se lance alors
+dans la lutte contre le crime sous le nom de Batman.
+                    </p>
+                </figcaption>
+            </figure>
+            <figure class="movie-description" id="knight">
+
+                <!--  Batman The Dark Knight -->
+
+                <img src="Assets/Illustrations/Home/Bathome10_slide_ba.png"  alt="">
+                <figcaption>
+                    <h2>
+                        ACTION, ADVENTURE
+                    </h2>
+                    <h3>
+                        The Dark Knight
+                    </h3>
+                    <p>
+                        IMDB: <span>9</span>
+                    </p>
+                    <p>Batman abordre une phase décisive dans sa guerre contre le crime.
+                         Avec l'aide du lieutenant de police Jim Gordon et du nouveau procureur Harvey Dent, 
+                         il entreprend de démanteler les dernières organisations criminelles qui infestent les rues de la ville.
+                          L'association s'avère efficace, mais le trio se heurte bientôt à un nouveau génie du crime qui répand la terreur 
+                          et le chaos dans Gotham : le Joker
+                        
+                    </p>
+                </figcaption>
+            </figure>
+            <figure class="movie-description" id="returns">
+                <!--  Batman The Dark Knight Returns -->
+                <img src="Assets/Illustrations/Home/Bathome11_slide_ba.png"  alt="">
+                <figcaption>
+                    <h2>
+                        ACTION, ADVENTURE
+                    </h2>
+                    <h3>
+                        The Dark Knight Rises
+                    </h3>
+                    <p>
+                        IMDB: <span>8.4</span>
+                    </p>
+                    <p>
+                        Huit ans ont passé depuis que Batman a disparu, passant du statut de héros à celui de fugitif. 
+                        Le "Chevalier Noir" a tout sacrifié pour le mieux. Pendant un certain temps, le mensonge a l'effet escompté : 
+                        la criminalité de Gotham City est presque éliminée par le commisssaire James Gordon avec l'unité anticrime d'Harvey Dent.
+                         Mais l'arrivée à Gotham de Bane, un terroriste masqué, chamboule l'ordre établi et pousse Bruce à sortir de l'exil qu'il s'est imposé.
+                    </p>
+                </figcaption>
+            </figure>
+            <img class="arrow next" src="Assets/Logos/Icones en + dans Home/icon_flèche_2.png" alt="suivant">
+        </div>
+
+    </section>
+    <section class="container bande-annonce reveal">
+        <!-- batman begins -->
+        <iframe width="1024" height="600" src="https://www.youtube.com/embed/jXrFsn9pcZY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <!-- the dark knight -->
+        <iframe width="1024" height="600" src="https://www.youtube.com/embed/UMgb3hQCb08" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <!-- The Dark Knight Rises -->
+        <iframe width="1024" height="600" src="https://www.youtube.com/embed/OiqPQ7L_C00" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </section>
+    <section class="container-fluid contact">
+        <form class="container">
+            <h1>
+                PRENONS CONTACT
+            </h1>
+            <div class="form1" id="form1">
+                <label for="mail">ADRESSE EMAIL</label><br>
+                <input type="text" placeholder="Adresse email" id="mail" name="mail">
+            </div>
+            <div class="form2">
+                <label for="newsletter">NEWSLETTER</label><br>
+                <p>
+                    En cochant cette case vous acceptez de recevoir l’actualité concernant les 
+    aventures de Batman : <input type="checkbox"></input>
+                </p>
+                <div class="form2-child">
+                    <select class="formSelect">
+                        <option value="" disabled selected hidden>Choisissez la fréquence à laquelle vous souhaitez recevoir votre newsletter</option>
+                        <option>Une fois par semaine</option>
+                        <option>Une fois toutes les deux semaines</option>
+                        <option>Une fois par mois</option>
+                        <option>Une fois tous les trois mois</option>
+                        <option>Une fois tous les six mois</option>
+                        </select>
+                </div>
+
+                <input type="text" placeholder="Souhaitez-vous recevoir des news" id="newsletter" name="newsletter">
+
+            </div>
+            <section class="news-type">
+                <button type="button" class="btn-type">
+                    Des films
+                </button>
+                <button type="button" class="btn-type">
+                    Des comics
+                </button>
+                <button type="button" class="btn-type">
+                    De tout
+                </button>
+            </section>
+
+            <div class="form3">
+                <label for="message">MESSAGE</label><br>
+                <input type="text" placeholder="Laissez un commentaire" id="message" name="message">
+            </div>
+            
+            <div class="cta">
+                <button type="submit" class="cta-btn" id="confirm">CONFIRMER</button>
+            </div>
+            <div id="modal">
+                <div class="modal-content">
+                    <div class="message">
+                        Now, You Are the Shadow, too ! <br>
+                        <button type="button" id="close-pop-up" class="cta-btn">Fermer</button>
+                    </div>
+                    
+
+                </div>
+            </div>
+
+        </form>
+
+
+    </section>
+    <section class="container quotes">
+        <img src="Assets/Logos/Icones en + dans Home/icon_guillemets_1.png" alt="">
+        <q class="bat-quotes">
+            La seule façon raisonnable de vivre en ce bas monde, 
+        c'est en dehors des règles. <br>
+        <span>The Dark Knight : Le Chevalier Noir - 
+            Le Joker à Batman (2008)</span>
+        </q>
+        <q class="bat-quotes">
+            Soit on meurt en héros, soit on vit assez longtemps pour se voir endosser le rôle du méchant <br>
+        <span>The Dark Knight : Le Chevalier Noir - 
+             Harvey Dent(2008)</span>
+        </q>
+        <q class="bat-quotes">
+            le héros peut-être en chacun, même en celui qui fqit une chose aussi simple
+            et rassurante que mettre un manteau sur les épaules d'un garçon et ainsi lui faire comprendre 
+            que le monde ne s'est pas écroulé. <br>
+        <span>The Dark Knight Rises - Batman à James Gordon (2012)</span>
+        </q>
+        <q class="bat-quotes">
+            Ah ! Tu crois que l'obsurité est ton allié, Tu n'a fait qu'adopter la pénombre
+            .Moi je suis né dedans, j'ai été façonné par elle. Je n'ai découvert la lumière qu'à l'âge d'homme, et alors, elle m'a juste
+            paru AVEUGLANTE ! <br>
+        <span>The Dark Knight Rises - Bane à Batman</span>
+        </q>
+
+        <img src="Assets/Logos/Icones en + dans Home/icon_guillemets_2.png" alt="">
+    </section>
+    <footer class="container">
+        <div class="copyright">
+           
+            <p> <img src="Assets/Logos/icon_WB.png" alt="Warner Bros">
+                Ce projet respecte l’univers cinématographique des films Batman récents. Version Nolan & Snyder & Reeves
+            </p>
+        </div>
+        <div class="brand-footer">
+            <div class="brand">
+                <img src="Assets/Logos/logo_sayna_white.png" alt="">
+                <img src="Assets/Logos/icon_x.png" alt="">
+                <img src="Assets/Logos/icon_DC.png" alt="">
+            </div>
+            <div class="social-footer" id="social-footer">
+                <!-- svg facebook -->
+                <svg class="my-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg>
+                <!-- svg instagram -->
+                <svg class="my-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+                <!-- svg twitter -->
+                <svg class="my-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+
+            </div>
+            
+        </div>
+    </footer>
+
+    
+
+    <script src="Assets/js/jquery-3.6.0.js"></script>
+    <script src="Assets/js/Batman.js"></script>
+    <script src="Assets/js/Game.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
